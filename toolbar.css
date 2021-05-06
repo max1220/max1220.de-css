@@ -1,0 +1,50 @@
+/* /Toolbar */
+
+	.toolbar {
+		padding: 1em;
+		display: flex;
+		flex-flow: column wrap;
+	}
+
+	.toolbar-group {
+		display: flex;
+		flex-flow: column wrap;
+	}
+
+	.toolbar-group > .btn-group > .btn {
+		margin: 0.25em 0.25em;
+	}
+
+	@media only screen and (min-width: 768px) {
+		.toolbar {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			border-radius: 0.25em;
+			padding: 0.125em;
+		}
+		.toolbar-group {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			width: auto;
+		}
+		.toolbar-group > .btn {
+			display: block;
+			margin: 0.125em 0.25em;
+		}
+		.toolbar-group > .btn-group {
+			width: auto;
+			display: inline-block;
+			margin: 0.125em 0.25em;
+		}
+		.toolbar-group > .btn-group > .btn {
+			margin: 0;
+		}
+		.toolbar-group > * {
+			margin: 0 0.5em;
+		}
+	}
+
+/* /Toolbar */

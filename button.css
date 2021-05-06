@@ -1,0 +1,138 @@
+/* Button */
+/*  Button Base */
+
+	.btn {
+		color: #333;
+		background-color: #FFF;
+		text-align: center;
+		text-decoration: none;
+		font-size: 120%;
+		font-weight: 300;
+		border: 0;
+		border-radius: 0.25em;
+		padding: 0.25em 0.5em;
+		margin: 0.25em 0.25em;
+		display: inline-block;
+		box-shadow: 0 0 10px 0.05px rgba(127,127,127,0.5);
+	}
+	.btn:hover {
+		background-color: #eee;
+	}
+	.btn:active {
+		background-color: #ddd;
+	}
+	.btn:focus {
+		outline: 0;
+	}
+
+/*  /Button Base */
+/*  Button utils */
+
+	.btn-block {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.btn.btn-round {
+		border-radius: 1em;
+	}
+	.btn-small.btn-round {
+		border-radius: 0.75em;
+	}
+	.btn-large.btn-round {
+		border-radius: 1.25em;
+	}
+	.btn-group {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.btn-group > .btn {
+		display: block;
+		border-radius: 0.25em;
+		margin: 0.15em;
+	}
+	@media only screen and (min-width: 768px) {
+		.btn-group {
+			display: inline-block;
+			width: auto !important;
+			border-radius: 0.25em;
+			box-shadow: 0 0 10px 1px rgba(0,0,0,0.15);
+		}
+		.btn-group > .btn {
+			display: inline-block;
+			margin: 0 0;
+			width: auto;
+			border-left: 1px solid #888;
+			border-radius: 0;
+			box-shadow: none;
+		}
+		.btn-group > .btn:hover {
+
+		}
+		.btn-group > .btn:first-child {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border-left: none;
+		}
+		.btn-group > .btn:last-child {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	}
+
+/*  /Button utils */
+/*  Button colors */
+
+	.btn-red {
+		color: #FFF;
+		background-color: #fF5540;
+	}
+	.btn-red:hover {
+		background-color: #ff4000;
+	}
+	.btn-red:active {
+		background-color: #ff6040;
+	}
+
+	.btn-blue {
+		color: #FFF;
+		background-color: #4271ff;
+	}
+	.btn-blue:hover {
+		background-color: #4261ff;
+	}
+	.btn-blue:active {
+		background-color: #4281ff;
+	}
+
+	.btn-green {
+		color: #FFF;
+		background-color: #71ff42;
+	}
+	.btn-green:hover {
+		background-color: #61ff42;
+	}
+	.btn-green:active {
+		background-color: #81ff42;
+	}
+
+
+/*  /Button colors */
+/*  Button Size */
+
+	.btn-small {
+		font-size: 100%;
+		padding: 0.15em 0.25em;
+		margin: 0 0;
+	}
+	.btn-large {
+		font-size: 130%;
+		padding: 0.45em 0.7em;
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+
+/*  /Button Size */
+/* /Button */
