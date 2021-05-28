@@ -21,7 +21,6 @@
 			flex-flow: row wrap;
 			justify-content: space-between;
 			align-items: center;
-			border-radius: 0.25em;
 			padding: 0.125em;
 		}
 		.toolbar-group {

@@ -14,5 +14,5 @@ sed -i "s/ > />/g" style.min.css
 wc -c style.min.css
 
 # gzip
-gzip --best style.min.css
+gzip --best < style.min.css > style.min.css.gz
 wc -c style.min.css.gz

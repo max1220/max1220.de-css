@@ -1,0 +1,81 @@
+/* Colors */
+
+	:root {
+		/* Generic color utils */
+		--col-default-fg: #333;
+		--col-default-bg: #f5f5f5;
+		--col-default2-fg: #333;
+		--col-default2-bg: #fff;
+		--col-inv-fg: #eee;
+		--col-inv-bg: #111;
+		--col-inv2-fg: #eee;
+		--col-inv2-bg: #000;
+		--col-border: #ccc;
+		--col-shadow: #ccc;
+		--col-shadow-inv: #444;
+
+		/* Element-specific colors */
+		--col-link: #33c;
+
+		--col-form-item-border-focus: #47f;
+		--col-form-item-border-invalid: #f54;
+
+		--col-button-default-fg: #333;
+		--col-button-default-bg: #fff;
+
+		--col-red-fg: #fff;
+		--col-red-bg: #f54;
+		--col-red-bg2: #f40;
+
+		--col-blue-fg: #fff;
+		--col-blue-bg: #47f;
+		--col-blue-bg2: #46f;
+
+		--col-green-fg: #fff;
+		--col-green-bg: #4e0;
+		--col-green-bg2: #7f4;
+	}
+
+	.col-default {
+		color: var(--col-default-fg);
+		background-color: var(--col-default-bg);
+	}
+	.col-default2 {
+		color: var(--col-default2-fg);
+		background-color: var(--col-default2-bg);
+	}
+	.col-inv {
+		color: var(--col-inv-fg);
+		background-color: var(--col-inv-bg);
+	}
+	.col-inv2 {
+		color: var(--col-inv2-fg);
+		background-color: var(--col-inv2-bg);
+	}
+
+	.col-red {
+		color: var(--col-red-fg);
+		background-color: var(--col-red-bg);
+	}
+	.col-green {
+		color: var(--col-green-fg);
+		background-color: var(--col-green-bg);
+	}
+	.col-blue {
+		color: var(--col-blue-fg);
+		background-color: var(--col-blue-bg);
+	}
+	.col-red2 {
+		color: var(--col-red-fg);
+		background-color: var(--col-red-bg2);
+	}
+	.col-green2 {
+		color: var(--col-green-fg);
+		background-color: var(--col-green-bg2);
+	}
+	.col-blue2 {
+		color: var(--col-blue-fg);
+		background-color: var(--col-blue-bg2);
+	}
+
+/* /Colors */

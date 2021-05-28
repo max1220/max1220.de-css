@@ -1,0 +1,50 @@
+/* Form */
+
+	/* Form input element styling */
+	.form-item {
+		display: block;
+		background-color: var(--col-default2-bg);
+		border: 1px solid var(--col-border);
+		border-radius: 0.25em;
+		padding: 0.25em;
+		margin: 0.25em;
+		box-shadow: 0 0 10px 0.5px var(--col-shadow);
+		font-size: 100%;
+	}
+	.form-item:focus {
+		border: 1px solid var(--col-form-item-border-focus);
+		box-shadow: 0 0 10px 0.5px var(--col-shadow);
+		outline: none;
+	}
+	.form-item:invalid {
+		border: 1px solid var(--col-form-item-border-invalid);
+		box-shadow: 0 0 10px 0.5px var(--col-shadow);
+	}
+
+
+	/* Responsive Form layout */
+	.form-row {
+		display: flex;
+		flex-direction: column;
+	}
+	.form-item {
+		display: block;
+	}
+	.form-label {
+		display: block;
+	}
+
+	@media only screen and (min-width: 768px) {
+		.form-row {
+			flex-direction: row;
+			align-items: baseline;
+		}
+		.form-item {
+			flex-basis: 60%;
+		}
+		.form-label {
+			flex-basis: 40%;
+		}
+	}
+
+/* /Form */

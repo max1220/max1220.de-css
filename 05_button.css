@@ -2,8 +2,8 @@
 /*  Button Base */
 
 	.btn {
-		color: #333;
-		background-color: #FFF;
+		color: var(--col-button-default-fg);
+		background-color: var(--col-button-default-bg);
 		text-align: center;
 		text-decoration: none;
 		font-size: 120%;
@@ -13,16 +13,22 @@
 		padding: 0.25em 0.5em;
 		margin: 0.25em 0.25em;
 		display: inline-block;
-		box-shadow: 0 0 10px 0.05px rgba(127,127,127,0.5);
+		box-shadow: 0 0 10px 0.5px var(--col-shadow);
+	}
+	.col-inv .btn, .col-inv2 .btn {
+		box-shadow: 0 0 10px 0.5px var(--col-shadow-inv);
 	}
 	.btn:hover {
-		background-color: #eee;
+		background-color: #e0e0e0;
 	}
 	.btn:active {
-		background-color: #ddd;
+		background-color: #ccc;
 	}
 	.btn:focus {
 		outline: 0;
+	}
+	.btn:visited {
+		color: #333;
 	}
 
 /*  /Button Base */
@@ -55,16 +61,20 @@
 	}
 	@media only screen and (min-width: 768px) {
 		.btn-group {
-			display: inline-block;
+			display: inline-flex;
+			flex-direction: row;
 			width: auto !important;
 			border-radius: 0.25em;
-			box-shadow: 0 0 10px 1px rgba(0,0,0,0.15);
+			box-shadow: 0 0 10px 0.5px var(--col-shadow);
+		}
+		.col-inv .btn-group, .col-inv2 .btn-group {
+			box-shadow: 0 0 10px 0.5px var(--col-shadow-inv);
 		}
 		.btn-group > .btn {
 			display: inline-block;
 			margin: 0 0;
 			width: auto;
-			border-left: 1px solid #888;
+			border-left: 1px solid #ccc;
 			border-radius: 0;
 			box-shadow: none;
 		}
@@ -86,36 +96,36 @@
 /*  Button colors */
 
 	.btn-red {
-		color: #FFF;
-		background-color: #fF5540;
+		color: var(--col-red-fg);
+		background-color: var(--col-red-bg);
 	}
 	.btn-red:hover {
-		background-color: #ff4000;
+		background-color: var(--col-red-bg2);
 	}
 	.btn-red:active {
-		background-color: #ff6040;
-	}
-
-	.btn-blue {
-		color: #FFF;
-		background-color: #4271ff;
-	}
-	.btn-blue:hover {
-		background-color: #4261ff;
-	}
-	.btn-blue:active {
-		background-color: #4281ff;
+		background-color: var(--col-red-bg);
 	}
 
 	.btn-green {
-		color: #FFF;
-		background-color: #71ff42;
+		color: var(--col-green-fg);
+		background-color: var(--col-green-bg);
 	}
 	.btn-green:hover {
-		background-color: #61ff42;
+		background-color: var(--col-green-bg2);
 	}
 	.btn-green:active {
-		background-color: #81ff42;
+		background-color: var(--col-green-bg);
+	}
+
+	.btn-blue {
+		color: var(--col-blue-fg);
+		background-color: var(--col-blue-bg);
+	}
+	.btn-blue:hover {
+		background-color: var(--col-blue-bg2);
+	}
+	.btn-blue:active {
+		background-color: var(--col-blue-bg);
 	}
 
 

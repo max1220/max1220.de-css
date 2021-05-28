@@ -2,8 +2,8 @@
 
 	.tbl {
 		width: 100%;
-		border-radius: 0.1em;
-		border: 1px solid #CCC;
+		background-color: var(--col-default2-bg);
+		border: 1px solid var(--col-border);
 		border-collapse: collapse;
 	}
 	.tbl thead {
@@ -15,8 +15,8 @@
 		overflow-x: hidden;
 	}
 	.tbl thead tr th {
-		border-right: 1px solid #CCC;
-		border-bottom: 1px solid #CCC;
+		border-right: 1px solid var(--col-border);
+		border-bottom: 1px solid var(--col-border);
 		padding: 0.25em 0.5em;
 		margin: 0 0;
 	}
@@ -24,10 +24,10 @@
 		border-right: 0;
 	}
 	.tbl tbody tr:hover {
-		background-color: rgba(0,0,0,0.05);
+		background-color: rgba(127,127,127,0.1);
 	}
 	.tbl tbody tr td {
-		border-right: 1px solid #CCC;
+		border-right: 1px solid var(--col-border);
 		padding: 0.25em 0.5em;
 	}
 	.tbl tbody tr td:last-child {
