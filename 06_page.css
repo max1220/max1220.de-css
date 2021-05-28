@@ -4,6 +4,7 @@
 		max-width: 768px;
 		margin: 0 auto;
 		overflow: auto;
+		margin-bottom: 1em;
 	}
 
 	.page.page-wide {
@@ -48,6 +49,9 @@
 	}
 
 	@media only screen and (min-width: 768px) {
+		.page {
+			margin-top: 1em;
+		}
 		.page.page-round-top {
 			border-top-left-radius: 1em;
 			border-top-right-radius: 1em;
