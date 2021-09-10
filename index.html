@@ -3,15 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="CSS test page">
+		<meta name="author" content="max1220">
 		<title>CSS test page</title>
-		<link rel="stylesheet" href="style.min.css">
+		<link rel="stylesheet" href="/css/style.min.css">
 
+		<!-- Automatic dark mode selection based on browser preference: -->
 		<meta name="color-scheme" content="dark light">
-		<!-- Automatic dark mode selection based on browser preference(prefered): -->
-		<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="dark.css">
+		<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="/css/dark.css">
 
 		<!-- Always use dark mode: -->
-		<!--link rel="stylesheet" href="dark.css"-->
+		<!--link rel="stylesheet" href="/css/dark.css"-->
 	</head>
 	<body>
 		<div class="page page-round-top page-round-bottom box-shadow-3 mar3 col-default">
@@ -23,7 +25,7 @@
 				<div class="col-2">
 					<p class="lead">I use this page to test my CSS.</p>
 					<div class="btn-group">
-						<a class="btn" target="_blank" href="style.css">CSS</a>
+						<a class="btn" target="_blank" href="/css/style.css">CSS</a>
 						<a class="btn" target="_blank" href="https://github.com/max1220/max1220.de-css">Github</a>
 					</div>
 				</div>
@@ -36,7 +38,7 @@
 					It should display okay on all screen sizes, from phones to desktops.
 				</p>
 				<p>
-					It's modular, and each module could be usefull on it's own.
+					It's modular, and each module could be usefull on it's own.<br>
 					It does not use any external frameworks/compilers/minifiers,
 					instead it's just CSS, with an optional bash script for basic
 					minification.
@@ -49,14 +51,14 @@
 
 				<p>
 					Minified version:
-					<a target="_blank" href="style.min.css">style.min.css</a>
+					<a target="_blank" href="/css/style.min.css">style.min.css</a>
 				</p>
 				<pre class="codeblock">
 &#60;link&#32;rel&#61;&#34;stylesheet&#34;&#32;href&#61;&#34;style&#46;min&#46;css&#34;&#62;
 </pre>
 				<p>
 					Concatenated version(human-readable):
-					<a target="_blank" href="style.css">style.css</a>
+					<a target="_blank" href="/css/style.css">style.css</a>
 				</p>
 
 				<pre class="codeblock">
@@ -76,7 +78,7 @@
 </pre>
 				<p>
 					A gzipped version is also provided for webservers that can't
-					automatically gzip: <a target="_blank" href="style.min.css.gz">style.min.css.gz</a>
+					automatically gzip: <a target="_blank" href="/css/style.min.css.gz">style.min.css.gz</a>
 				</p>
 
 				<h2>minify_css.sh</h1>
@@ -301,7 +303,7 @@ or a code tag to create an inline code block.</pre>
 				<p>
 					Often forms are created by combining this with a grid as shown below:
 				</p>
-				<div class="form-grid">
+				<div>
 					<div class="form-row">
 						<label for="Username1" class="form-label">Username:</label>
 						<input id="Username1" type="text" class="form-item">
@@ -563,8 +565,5 @@ or a code tag to create an inline code block.</pre>
 			</div>
 
 		</div>
-		<br>
-		<br>
-		<br>
 	</body>
 </html>

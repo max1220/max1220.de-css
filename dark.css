@@ -12,6 +12,7 @@
 		--col-border: #444;
 		--col-shadow: #444;
 		--col-shadow-inv: #ccc;
+		--col-page-border: rgba(0,0,0,0.4);
 	}
 
 	body {

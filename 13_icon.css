@@ -1,0 +1,11 @@
+/* Icon */
+
+.icon {
+	width: 0.9em;
+	height: 0.9em;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* /Icon */

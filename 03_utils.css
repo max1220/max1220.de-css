@@ -11,6 +11,12 @@
 	.center-text {
 		text-align: center;
 	}
+	.left-text {
+		text-align: left;
+	}
+	.right-text {
+		text-align: right;
+	}
 	.codeblock {
 		border: 1px solid var(--col-border);
 		background-color: var(--col-default2-bg);
