@@ -1,7 +1,7 @@
 # max1220.de CSS
 
-This is the github repository for my small CSS framework,
-intended for use on my website([max1220.de](https://max1220.de).
+This is the GitHub repository for my small CSS framework,
+intended for use on my website([max1220.de](https://max1220.de)).
 
 Also included is a small Bash script to concatenate and minify the CSS files.
 
