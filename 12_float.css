@@ -1,17 +1,17 @@
 /* Float */
 
-.left {
-	float: left;
-}
+	.left {
+		float: left;
+	}
 
-.right {
-	float: right;
-}
+	.right {
+		float: right;
+	}
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
 
 /* /Float */
